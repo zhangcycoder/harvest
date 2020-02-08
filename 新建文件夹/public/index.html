@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="package/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <script src="package/jquery-3.4.1/jquery-3.4.1.js"></script>
+    <script src="package/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+</head>
+<body>
+        <div class="form-group">
+                <label for="firstname" class="col-sm-2 control-label">名字</label>
+                  <input type="text" class="form-control name" id="firstname" placeholder="请输入名字">
+        </div>
+        <div class="form-group">
+            <label for="lastname" class="col-sm-2 control-label">生日</label>
+                <input type="text" class="form-control age" id="lastname" placeholder="请输入姓">
+        </div>
+
+        <div class="form-group">
+            <p>性别</p>
+            <div class="sex">
+                <label class="radio-inline">
+                    <input type="radio" name="sex" id="optionsRadios3" value="男" checked>男
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="sex" id="optionsRadios4"  value="女">女
+                </label>
+            </div>
+                    爱好
+               <div class="hobby">
+                    <input type="checkbox" name="hobby" value="篮球">篮球
+                    <input type="checkbox" name="hobby" value="足球">足球
+                    <input type="checkbox" name="hobby" value="乒乓球">乒乓球
+                    <input type="checkbox" name="hobby" value="网球">网球
+               </div>
+        </div>
+
+        <div class="form-group">
+                <label for="firstname" class="col-sm-2 control-label">班级</label>
+                  <input type="text" class="form-control cla" id="firstname" placeholder="班级名称">
+        </div>
+        <button type="button" class="zcyBut btn-primary btn-lg btn-block">提交</button>
+        <br>
+        <div>
+            <input type="text" class="infoInput">
+            <button class="info">搜索</button>
+        </div>
+
+        <table border="1px" width="800px">
+            <thead>
+                <tr>
+                    <td>姓名</td>
+                    <td>出生日期</td>
+                    <td>性别</td>
+                    <td>爱好</td>
+                    <td>班级</td>
+                    <td>注册时间</td>
+                    <td>操作</td>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">模态框（Modal）标题</h4>
+                    </div>
+                    <div class="modal-body">是否确认删除</div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default " data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-primary del2" data-dismiss="modal">删除</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
+        </div>
+
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">修改</h4>
+                    </div>
+
+                    出生日期:<input type="text" class="age1">
+                    性别:<input type="text" class="sex1">
+                    班级:<input type="text" class="cla1">
+                    爱好:<input type="text" class="hobby1">
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default " data-dismiss="modal">取消</button>
+                        <button type="button" class="btn update2 btn-primary " data-dismiss="modal">确认修改</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
+        </div>
+
+      
+</body>
+</html>
+<script src="Javascript/main.js"></script>
